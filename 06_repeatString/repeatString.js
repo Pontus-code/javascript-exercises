@@ -9,7 +9,6 @@ const repeatString = function(string, num) {
         }
         return text
     }
-
 };
 
 // Do not edit below this line
