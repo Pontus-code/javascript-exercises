@@ -1,12 +1,9 @@
-const removeFromArray = function(p1,p2,p3,p4,p5) {
-    let array = p1
-    let toRemove = [p2,p3,p4,p5]
+const removeFromArray = function(array, ...args) {
     let newArray = []
-
     for (let i = 0; i < array.length; i++) {
         removeMe = ""
-        for (let j = 0; j < toRemove.length; j++) {
-            if (array[i] === toRemove[j]) {
+        for (let j = 0; j < args.length; j++) {
+            if (array[i] === args[j]) {
                 removeMe = "yes"
             } 
         }
